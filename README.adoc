@@ -69,14 +69,6 @@ Log in here:
 
 https://lab-getting-started-java-labs.apps.cluster-bcbssc-45a3.bcbssc-45a3.example.opentlc.com/
 
-== Other tips
-
-Here are the prerequisites if you want to set up a build server on RHEL 7. I highly recommend RHEL 8 and docker-podman as an approach instead.
-
-Openshift API for command line 'oc' client: 
-
-Download oc client from https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.3.33/openshift-client-linux-4.3.33.tar.gz
-
 
 === Resources
 
@@ -103,16 +95,24 @@ image::images/mongo-db-secret.png[]
 
 == Working docker on Red Hat Enterprise Linux (RHEL)
 
+Here are the prerequisites if you want to set up a build server on RHEL 7. I highly recommend RHEL 8 and docker-podman as an approach instead.
+
+Openshift API for command line 'oc' client: 
+
+Download oc client from https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.3.33/openshift-client-linux-4.3.33.tar.gz
+
+Browse the above mirror for other versions of the OC client. 
+
 === Obtaining RHEL
 A free copy of RHEL can be obtained from the Red Hat Developers network at https://developers.redhat.com[Free Red Hat Developers Subscriptions]
 
-== Working with RHEL 8
+=== Working with RHEL 8
 
 To configure a RHEL 8 system for this lab, use the following commands after installation:
 
 $ sudo yum install java-1.8.0-openjdk
 $ sudo yum install maven
-$ sudo yum install docker
+$ sudo yum install docker  # this will install docker-podman
 $ sudo yum install wget git vim nano
 
 === Setting up RHEL 7.x with the commands for the workshop
